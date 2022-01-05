@@ -1,0 +1,61 @@
+:root{
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+}
+
+body{
+  font-family: 'Roboto',sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  
+  
+}
+
+.container{
+  display: flex;
+  width: 90vw;
+
+}
+
+.panel{
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex .4s ease-in;
+}
+
+.panel h3{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  
+}
+
+
+.active{
+    flex: 5;
+    background-repeat: repeat;
+    
+    
+}
+
+.panel.active h3{
+  opacity: 1;
+  transition: opacity .3s ease-in .4s;
+}
+
+
+
+
